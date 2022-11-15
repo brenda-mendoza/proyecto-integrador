@@ -1,0 +1,27 @@
+
+.banner-funko{
+    width: 60%;
+    max-width: 1200px;
+    
+    &__container{
+        text-align: center;
+        margin-top: 1em;
+        background-color:#FFDB01 ;
+    }
+}
+
+
+.banner-starwars{
+    width: 80%;
+
+    &__container{
+        text-align: right;
+        margin-top: 2em;
+        background-color:#F3F3F4;
+        
+    }
+
+}
+
+
+

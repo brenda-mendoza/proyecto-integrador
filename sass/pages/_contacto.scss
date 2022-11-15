@@ -1,0 +1,159 @@
+*{
+    box-sizing: border-box;
+}
+
+
+
+.main-form-contact{    
+    padding: 2em;
+    margin: 0;
+    background-image:url(../../img/contact-img/astronaut-contact.png), url(../../img/alta-img/stars-background-alta.jpg);
+    background-repeat: no-repeat, repeat;
+    background-size: 170px;
+    background-position: 90% top;
+
+    @media (min-width:900px) {
+        background-position: 70% top;
+    }
+    @media (min-width:2000px) {
+        background-position: 60% top;
+    }
+    
+    &__container{
+        background-image: url(../../img/contact-img/astronauta-contact2.png);
+        background-repeat: no-repeat;
+        background-position: bottom right;
+        background-size: 170px;
+        background-color: #ebebebe7;
+        text-align: left;
+        font-weight: bold;
+        padding: 1em;
+        margin: .5em;
+        border-radius: 1em;
+        max-width: 700px;
+        min-height: 500px;
+        position: relative;
+        box-shadow:inset 2px 2px 6px #000,
+                inset -2px -2px 6px #000;
+        
+            @media (min-width:768px) {
+                margin-right: auto;
+                margin-left: auto;
+            }
+    }
+
+
+
+    &__title{
+        color: #fff;
+        text-shadow: 1px 2px 6px rgb(0, 0, 0);
+        text-align: center;
+        margin: 2em;
+        font-size: 25px;
+
+    }
+
+    &__image{
+        width: 20%;
+        right: 1px;
+        position: absolute;
+    }
+
+    &__input{
+        width: 60%;
+        padding: .2em;
+        border: none;
+        border-radius: .5em;
+        border-bottom: 1px solid hsl(240, 7%, 81%);
+    }
+
+    &__textarea{
+        display: block;
+        border: none;
+        border: 1px solid hsl(240, 7%, 81%);
+        border-radius: .5em;
+        resize: vertical;
+        min-width: 250px;
+        min-height: 170px;
+        max-height: 400px;
+
+        @media (min-width:620px) {
+            min-width: 450px;
+        }
+
+    }
+
+    &__sub-container{
+        padding: 1em;
+    }
+
+    &__btn-container{
+        margin-top: 3em;
+        text-align: center;
+
+    }
+
+    &__btn{
+        border: none;
+    background-color: #DA3C3E;
+    cursor: pointer;
+    box-shadow: 1px 2px 6px #808080;
+    font-weight: 700;
+    padding: 1em;
+    border-radius: .9em;
+
+        &:hover{
+            color: #fff;
+            background-color: #808080;
+        }
+    }
+}
+
+
+#name-contact:focus,
+#email:focus,
+#coments:focus{
+    padding-left: 1em;
+    outline: none;
+    border-radius: .5em;
+    box-shadow: inset 1px 1px 5px hsl(240, 7%, 80%);
+}
+
+// Estilos Mensajes de Error
+
+.main-form__grupo-correcto .main-form-contact__input {
+    background-image: url(../img/validator-img/icono-verde.png);
+    background-repeat: no-repeat;
+    background-position: right 2px center;
+    background-size: 20px;
+}
+
+.main-form__input-error {
+    font-size: 10px;
+    margin-bottom: 0;
+    display: none;
+}
+
+.main-form__input-error-activo {
+    display: block;
+}
+
+.main-form__grupo-incorrecto {
+    color: #bb2929;
+    opacity: 1;
+
+    & .main-form__label {
+        color: #bb2929;
+    }
+    & .main-form__input {
+        border: 3px solid #bb2929;
+        background-image: url(../img//validator-img/icono-error.png);
+        background-repeat: no-repeat;
+        background-position: right 2px center;
+        background-size: 15px;
+        
+    }
+
+}
+
+

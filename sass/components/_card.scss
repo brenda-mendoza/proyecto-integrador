@@ -1,0 +1,157 @@
+/*
+Azul:#354D77
+Violeta: #B967BB
+Rosa: #F18B96
+Celeste fondo: #EFFDFF
+Celeste: #8DC9EB
+Celeste pastel: #C3DDDA
+Amarillo:#F5C12D
+Bordo: #AE2C36
+*/
+:root{
+    --violet:#B967BB;
+    --lightblue:#C3DDDA;
+    --yellow:#F5C12D;
+    --pink:#F18B96;
+}
+
+.card{
+    width: 300px;
+    height: 300px;
+    background-color: white;
+    border-radius: 1em;
+    padding: .3em;
+    line-height: 1;
+    margin: 2em;
+    margin-bottom: 3em;
+    border-top: 2px solid #8080805e;
+    box-shadow: 2px 1px 7px #8080805e;
+    
+
+    //Resolucion horizontal     
+    @media (min-width:480px) and (max-width:733px) {
+        height: 225px;
+        width: 400px;
+        margin-bottom: 3em;
+        flex-grow: 1;
+        
+        .card__article{
+            display: grid;
+            grid-template-columns: 50% 50%;
+        }
+
+        .card__content{
+            border-top-right-radius:1em;
+            border-bottom-left-radius: 0;
+            margin: -6px  ;
+            grid-row-start: 1;
+            grid-row-end: 3;
+            grid-column-start: 2;
+        }
+
+        .card__price{
+            margin-right: 35px;
+        }
+
+        .card__btn-buy{
+            margin-top: 35px;
+        }
+    }
+    
+    //Contenedor de la imagen
+    &__image-conteiner{
+        height: 170px;
+        background-color: #fff;
+        margin-bottom: 1px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        overflow: hidden;
+        
+    }
+
+    //La imagen
+    &__image{
+        width: 160px;
+    }
+    
+    //Contenido de la card
+    &__content{
+        margin: -5px;
+        padding: 16px;
+        border-radius: 00px 00px 17px 17px;
+    }
+    
+    //Colores de las Cards    
+    &__content--lightblue{
+        background-color:var(--lightblue);
+    }
+    &__content--violet{
+        background-color:var(--violet);
+    }
+    &__content--yellow{
+        background-color:var(--yellow);
+    }
+
+    //Titulo de la Card
+    &__heading{
+        font-size: 1em;
+    }
+    
+    //Descripción del producto
+    &__description{
+        font-size: .8em;
+    }
+    
+    //Precio 
+    &__price{
+        text-align: right;
+        font-weight: 700;
+        font-size: 1.3em;
+        margin:0;
+    }
+
+    //Boton comprar
+    &__btn-buy{
+        background-color:#FF8400;
+        font-family: 'Nunito', sans-serif;
+        font-weight: 700;
+        border: none;
+        padding: .5em;
+        border: 2px solid #FF8400;
+        border-radius: .7em;
+        box-shadow: 1px 1px 3px rgb(94, 93, 93);
+
+        &-alert{
+            background-color: #29a029bb;
+            color: #fff!important;
+            border: #fff 3px solid;
+        }
+        
+        &:hover{
+            cursor: pointer;
+            color: #fff;
+            border: #fff 3px solid;
+            background-color: #ff6600;
+        }
+    }
+
+    //Hover cards segun el color del content
+    &__hover--violet:hover{
+        box-shadow: -1px -1px 20px var(--violet);
+    }
+    &__hover--yellow:hover{
+        box-shadow: -1px -1px 20px var(--yellow);
+    }
+    
+    &__hover--lightblue:hover{
+        box-shadow: -1px -1px 20px var(--lightblue);
+    }
+    
+    
+}
+
+.price{
+    margin: .5em 0;
+}
+

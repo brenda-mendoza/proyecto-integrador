@@ -1,0 +1,34 @@
+<form action="alEter.php" autocomplete="off" class="main-form-contact" >
+    <h1 class="main-form-contact__title" >Escribinos!</h1>
+    <div class="main-form-contact__container">
+        <div class="main-form-contact__sub-container" id="group__name">
+            <label class="main-form-contact__label" for="name-contact">Nombre:</label>
+            <input class="main-form-contact__input" id="name-contact" type="text" name="name" autofocus>
+            <div>
+                <p class="main-form__input-error">Debe contener de 3 a 10 caracteres / No soporta caracteres especiales</p>
+            </div>
+        </div>
+
+        <div class="main-form-contact__sub-container" id="group__mail">
+            <label class="main-form-contact__label" for="email" >E-mail:</label>
+            <input class="main-form-contact__input" id="email" type="email" name="mail">
+            <div>
+                <p class="main-form__input-error"> Ingrese un mail válido </p>
+            </div>
+        </div>
+
+        <div class="main-form-product__sub-container" id="group__long-description">
+            <label class="main-form-contact__label" for="long-description" >Descripción larga:</label>
+            <textarea class="main-form-contact__textarea" name="longDescription" id="long-description" required>
+            </textarea>
+            <div>
+                <p class="main-form__input-error">Debe contener máximo 2000 caracteres / Obligatorio</p>
+            </div>
+        </div>
+        <div class="main-form-contact__btn-container">
+            <input class="main-form-contact__btn" type="submit" value="Enviar">
+        </div>
+
+    </div>
+
+</form>

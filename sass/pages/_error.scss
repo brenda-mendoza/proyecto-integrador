@@ -1,0 +1,32 @@
+.error{
+    margin-left: auto;
+    margin-right: auto;
+    text-align: center;
+    max-width: 1200px;
+    
+    &__title{
+        text-align: center;
+        color: #351744;
+        text-shadow: 2px 2px 5px #60EB2C;
+    }
+
+    &__description{
+        background-color: #351744;
+        font-weight: bold;
+        color: #60EB2C;
+        padding: .5em;
+    }
+
+    &__img1{
+        width: 300px;
+        float: bottom;
+    }
+
+    &__inicio-link{
+        color: #FFF;
+        text-transform: uppercase;
+    }
+
+}
+
+

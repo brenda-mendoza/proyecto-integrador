@@ -1,0 +1,37 @@
+{{#if cart.length}}
+    <table class="cart-modal__table">
+        <thead>
+            <tr>
+                {{!-- <th scope="column">Id</th> --}}
+                <th scope="column">Cantidad</th>
+                <th scope="column">Imagen</th>
+                <th scope="column">Nombre</th>
+                <th scope="column">Precio</th>
+                <th scope="column">Subtotal</th>
+                <th scope="column">Acciones</th>
+            </tr>
+        </thead>
+        <tbody>
+            {{#each cart}}
+                <tr class="cart-modal__item">
+                    {{!-- <td class="cell-id">{{id}}</td> --}}
+                    <td><input class="cart-modal__quantity" type="number" value="{{quantity}}"></td>
+                    <td><img class="cart-modal__img" src="{{image}}" ></td>
+                    <td class="cart-modal__name">{{name}}</td>
+                    <td class="cart-modal__price">${{price}}</td>
+                    <td class="cart-modal__sub"></td>
+                    <td class="cart-modal__button">
+                        <button class="btnDelete" type="button">X</button>
+                    </td>
+                </tr>
+            {{/each}}
+        </tbody>
+        <tfoot>
+            <tr>
+                <td colspan="5">Cantidad de Items {{cart.length}}</td>
+            </tr>
+        </tfoot>
+    </table>
+{{else}}
+    <p>No hay productos en el carrito</p>
+{{/if}}

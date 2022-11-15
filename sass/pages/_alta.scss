@@ -1,0 +1,300 @@
+*{
+    box-sizing: border-box;
+}
+
+.main-alta{
+    background-image: url(../../img/alta-img/stars-background-alta.jpg);
+    padding: 10px;
+}
+
+.main-form-product{
+    font-size: 110%;
+    text-align: left;
+    padding: .7em;
+    margin-bottom: 1em;
+    border-radius: 1em;
+    background-color: rgba(255, 255, 255, 0.699);
+    max-width: 600px;
+    margin: 0 auto;
+    
+    
+    @media (min-width:767px) {
+        max-width: 900px;
+    }
+
+    &__container{
+        
+        @media (min-width:767px) {
+            display: grid;
+            grid-template-columns: 50% 50%;
+            background-image: none;
+        }
+    }
+
+    &__error-message{
+        display: none;
+        
+        &-show{
+            display: block;
+            background-color: #bb292971;
+        }
+    }
+
+
+
+    &__title{
+        text-align: left;
+        font-size: 25px;
+        text-shadow: 1px 1px 2px #f7f7f8ce;
+        color: #FFF;
+        background-image: url(../../img/alta-img/star-wars-alta1.png);
+        background-size: 130px;
+        background-repeat: no-repeat;
+        background-position: right;
+        padding: 2em;
+
+        @media (min-width:520px) {
+            text-align: center;
+        }
+        @media (min-width:600px) {
+            background-position: 85%;
+        }
+        
+    }
+
+    &__input{
+        width: 50%;
+        padding: .2em;
+        border: none;
+        border-radius: .5em;
+        border: 1px solid rgb(148, 146, 146);
+    }
+
+    &__textarea{
+        display: block;
+        margin: 1em;
+        border: none;
+        border: 1px solid rgb(148, 146, 146);
+        border-radius: .5em;
+        min-width: 300px;
+        min-height: 150px;
+        max-height: 400px;
+        resize: vertical;
+
+        @media screen {
+            
+        }
+        
+    }
+
+    &__sub-container{
+        padding: .9em;
+    }
+
+    &__btn-container{
+        margin-top: 3em;
+        text-align: center;
+        background-image: url(../../img/alta-img/star-wars-alta2.png);
+        background-repeat: no-repeat;
+        padding: 3em;
+        background-size: 130px;
+
+        @media (min-width:600px) {
+            background-position: 25%;
+            grid-column-start: 1;
+            grid-column-end: 3;
+        }
+    }
+
+    &__btn{
+        text-align: center;
+        border: none;
+        background-color: #946aac;
+        cursor: pointer;
+        box-shadow: 1px 2px 6px #000;
+        font-weight: 700;
+        padding: .5em;
+        border-radius: .3em;
+        margin: .5em;
+    
+        &:hover{
+            color: hsl(240, 3%, 94%);
+            background-color: #000;
+        }
+
+        &-alert{
+            background-color: rgb(111, 182, 5);
+        }
+    }
+
+    &__icon{
+        margin: -3px;
+    }
+
+}
+
+.products-table{
+    background-color: rgba(255, 255, 255, 0.699);
+    max-width: 900px;
+    margin: 0 auto;
+    border-radius: .5em;
+    padding: .5em;
+    overflow: hidden;
+
+    &__caption{
+        text-shadow: 1px 1px 2px #f7f7f8d2;
+        color: #FFF;
+        font-weight: 700;
+        font-size: 25px;
+    }
+
+    &__head{
+        background-color: #946aac;
+        padding: .5em;
+    }
+
+    &__item{
+        background-color: #f7f7f8;
+        border-collapse: separate;
+    }
+    
+    &__name,
+    &__btn,
+    &__price,
+    &__description{
+        padding: .5em;
+    }
+
+    &__description{
+        max-width: 100px;
+        text-overflow: ellipsis;
+        overflow: hidden;
+        white-space: nowrap
+    }
+
+    &__btn{
+        
+        &-edit{
+            border-radius: .3em;
+            background-color: rgb(138, 207, 138);
+        }
+        &-delete{
+            border-radius: .3em;
+            background-color: #be3c3ca6;
+        }
+    }
+}
+
+
+#group__price,
+#group__stock,
+#group__brand,
+#group__category{
+    @media (min-width:768px) {
+        grid-column-start: 1;
+    }
+}
+
+
+#group__category{
+    background-image: url(../../img/alta-img/star-wars-alta3.png);
+    background-size: contain;
+    background-repeat: no-repeat;
+    background-position: 65%;
+}
+
+#group__shortDescription{
+    @media (min-width:768px) {
+        grid-column-start: 2;
+        grid-row-start: 1;
+        grid-row-end: 5;
+    }
+}
+#group__longDescription{
+    @media (min-width:768px) {
+        grid-column-start: 2;
+        grid-row-start: 5;
+        grid-row-end: 8;
+    }
+}
+
+#group__image-product{
+    @media (min-width:768px) {
+        grid-column-start: 2;
+        grid-row-start: 7;
+        
+    }
+}
+#ageFrom,
+#ageUntil{
+    @media (min-width:768px) {
+        grid-column-start: 1;
+        grid-row-start: 7;
+    }
+}
+
+
+#price,
+#stock,
+#ageFrom,
+#ageUntil{
+    width: 150px;
+}
+
+
+#name-product:focus,
+#price:focus,
+#stock:focus,
+#brand:focus,
+#ageFrom:focus,
+#ageUntil:focus,
+#direccion:focus,
+#yes-shipping:focus,
+#no-shipping:focus{
+    padding-left: 1em;
+    outline: none;
+    border-radius: .5em;
+    box-shadow: inset 1px 1px 5px hsl(240, 0%, 46%);
+};
+
+
+
+// Estilos Mensajes de Error
+
+.main-form__grupo-correcto .main-form-product__input {
+    background-image: url(../img/validator-img/icono-verde.png);
+    background-repeat: no-repeat;
+    background-position: right 2px center;
+    background-size: 20px;
+};
+
+.main-form__input-error {
+    font-size: 1em;
+    font-weight: 700;
+    margin-bottom: 0;
+    display: none;
+};
+
+.main-form__input-error-activo {
+    display: block;
+};
+
+.main-form__grupo-incorrecto {
+    color: #bb2929;
+    opacity: 1;
+
+    & .main-form-product__label {
+        color: #bb2929;
+    }
+    & .main-form-product__input {
+        border: 3px solid #bb2929;
+        background-image: url(../img/validator-img/icono-error.png);
+        background-repeat: no-repeat;
+        background-position: right 2px center;
+        background-size: 15px;
+        
+    }
+
+};
+
+

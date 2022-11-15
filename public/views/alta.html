@@ -1,0 +1,112 @@
+<div class="main-alta">
+    <h1 class="main-form-product__title">Alta de producto</h1>
+    <form action="/api/products" autocomplete="off" class="main-form-product" method="post" enctype="multipart/form-data">
+        <div class="main-form-product__container">
+            
+            <div class="main-form-product__sub-container" id="group__name">
+                <label class="main-form-product__label" for="name-product">Nombre:</label>
+                <input class="main-form-product__input" id="name-product" type="text" name="name" autofocus required>
+                <div>
+                    <p class="main-form__input-error">Debe comenzar con mayúscula/ Máximo 30 caracteres / Puede contener letras y/o números / Obligatorio</p>
+                </div>
+            </div>
+            <div class="main-form-product__sub-container" id="group__price">
+                <label class="main-form-product__label" for="price">Precio:</label>
+                <input class="main-form-product__input" id="price" type="text" name="price" required>
+                <div>
+                    <p class="main-form__input-error"> Ingresar sólo números / Utilizar punto para separar los centavos / Maximo 2 decimales</p>
+                </div>
+            </div>
+            <div class="main-form-product__sub-container" id="group__stock">
+                <label class="main-form-product__label" for="stock">Stock:</label>
+                <input class="main-form-product__input" id="stock" type="number" name="stock" required>
+                <div>
+                    <p class="main-form__input-error">Debe ser mayor o igual a 0 / Ingresar sólo números sin decimales </p>
+                </div>
+            </div>
+            <div class="main-form-product__sub-container" id="group__brand">
+                <label class="main-form-product__label" for="brand" >Marca:</label>
+                <input class="main-form-product__input" id="brand" type="text" name="brand" required>
+                <div>
+                    <p class="main-form__input-error">Debe contener máximo 40 caracteres / Puede contener letras y/o números / Obligatorio</p>
+                </div>
+            </div>
+            <div class="main-form-product__sub-container" id="group__category">
+                <p>Categoría:</p>
+                <select name="category" id="category" required>
+                    <option value="">Seleccionar</option>
+                    <option value="Funko Pop">Funko Pop</option>
+                    <option value="Star Wars">Star Wars</option>
+                </select>
+            </div>
+            <div class="main-form-product__sub-container" id="group__shortDescription">
+                <label class="main-form-product__label" for="short-description" >Descripción corta:</label>
+                <textarea class="main-form-product__textarea" name="shortDescription" id="short-description" required>
+                </textarea>
+                <div>
+                    <p class="main-form__input-error">Debe contener máximo 80 caracteres / Obligatorio</p>
+                </div>
+            </div>
+            <div class="main-form-product__sub-container" id="group__longDescription">
+                <label class="main-form-product__label" for="long-description" >Descripción larga:</label>
+                <textarea class="main-form-product__textarea" name="longDescription" id="long-description" required>
+                </textarea>
+                <div>
+                    <p class="main-form__input-error">Debe contener máximo 2000 caracteres / Obligatorio</p>
+                </div>
+            </div>
+            <div class="main-form-product__sub-container" id="group__shipping">
+                <p>Envio Gratis:</p>
+                <select name="shipping" id="shipping" required>
+                    <option value="">Seleccionar</option>
+                    <option value="free-shipping-yes">Si</option>
+                    <option value="free-shipping-no">No</option>
+                </select>
+            </div>
+            <div class="main-form-product__sub-container" id="group__ageFrom">
+                <div><label class="main-form-product__label" for="ageFrom">Edad:</label></div>
+                <label class="main-form-product__label" for="ageFrom">Desde</label>
+                <input class="main-form-product__input" id="ageFrom" type="number" name="ageFrom" required>
+                <select name="age-type" id="age" required>
+                    <option value="">Seleccionar</option>
+                    <option value="meses">Meses</option>
+                    <option value="años">Años</option>
+                </select>
+                <div>
+                    <p class="main-form__input-error">Debe ser mayor o igual a 0 / Ingresar números sin decimales / Indicar Meses o Años </p>
+                </div>
+            </div>
+            <div class="main-form-product__sub-container" id="group__ageUntil">
+                <label class="main-form-product__label" for="ageUntil">Hasta</label>
+                <input class="main-form-product__input" id="ageUntil" type="number" name="ageUntil" required>
+                <select name="age-type" id="age" required>
+                    <option value="">Seleccionar</option>
+                    <option value="meses">Meses</option>
+                    <option value="años">Años</option>
+                </select>
+                <div>
+                    <p class="main-form__input-error">Debe ser mayor o igual a 0 / Ingresar números sin decimales / Indicar Meses o Años </p>
+                </div>
+            </div>
+            <div  id="group__image-product">
+                <label for="image-product">Selecciona una imagen del producto:</label>
+                <input type="file" id="image-product" name="image" accept="image/png, image/jpeg">
+            </div>
+            <div class="main-form-product__error-message">Por favor completa correctamente el formulario.</div>
+            <div class="main-form-product__btn-container">
+                <button class="main-form-product__btn" id="btn-create">Crear</button>
+                <button class="main-form-product__btn" type="button" id="btn-update" disabled>Guardar</button>
+                <button class="main-form-product__btn" type="button" id="btn-cancel" disabled>Cancelar</button>
+            </div>
+        </div>
+    </form>
+    
+    <section >
+        <h2 class="products-table__title">Listado de productos</h2>
+        <div class="products-table__container"></div>
+    </section>
+</div>
+
+
+
+

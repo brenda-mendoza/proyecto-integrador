@@ -1,0 +1,82 @@
+/*
+Azul:#354D77
+Celeste fondo: #EFFDFF
+Celeste: #8DC9EB
+Celeste pastel: #C3DDDA
+Amarillo:#F5C12D
+Bordo: #AE2C36
+*/
+
+//Barra de navegación
+.main-nav{
+    background-color: #354D77;
+    font-weight: 700;
+
+    
+    //Lista de items 
+    &__list{
+        margin: 0;
+        padding: 0;
+        list-style-type: none;
+
+        
+        @media(min-width: 768px) {
+            display: flex;
+            align-items: center;
+        }
+
+    }
+    
+    //Items barra de navegación
+    &__item{
+        text-align: center;
+        
+        @media(min-width: 768px) {
+            flex-direction: row;
+        }
+    }
+
+    &__icon{
+        width: 30px;
+
+        &:hover{
+            background-color: #F5C12D;
+            border-radius: .2em;
+        }
+    }
+
+    //Links dentro de los items
+    &__link{
+        display: block;
+        width: 100%;
+        padding: .5em .7em;
+        color: #fff;
+        background-color: #354D77;
+        font-size: 1em;
+        text-decoration: none;
+        
+        &:hover{
+            color: #F5C12D;
+            transform: scale(1.1);
+        }
+
+        &--active{
+            text-decoration: underline;
+            color: #f5c02d;
+        }
+
+
+        @media(min-width: 768px) {
+            font-size: .7em;
+        }
+        @media(min-width: 1024px) {
+            padding-left: .5em;
+            padding-right: .5em;
+            font-size: .8em;
+        }
+    }
+}
+
+.active {
+    color: #F5C12D;
+}

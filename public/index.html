@@ -1,0 +1,221 @@
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title></title>
+    <link rel="stylesheet" href="/css/main.css" />
+  </head>
+  <body>
+    <header>
+      <input type="checkbox" class="main-nav-toggle" id="main-nav-toggle" />
+      <div class="main-header">
+        <div class="main-header__deliver">
+          ENVíO GRATIS EN COMPRAS MAYORES A $5000</div>
+        <div class="main-header__container">
+          <div class="main-header__logo-container">
+            <a href="/">
+              <img class="img-logo" src="img/logo.png" alt="imagen-logo" />
+            </a>
+          </div>
+
+          <div class="main-header__search-form-container">
+            <input
+              type="text"
+              class="search-input"
+              placeholder="¿Qué buscas?"
+              name="buscador"
+              autocomplete="off"
+              title="Barra para buscar"
+            />
+            <button
+              type="submit"
+              value="Buscar"
+              class="btn search-input-submit"
+            >
+              <img class="search-icon" src="img/search-icon.png" alt="Buscar" />
+            </button>
+          </div>
+          <div class="main-header__cart-button-container" title="Abrir Carrito de Compras">
+            <img
+              class="img-cart-button"
+              src="img/icon-cart.png"
+              alt="cart-button-image"
+            />
+          </div>
+          <div class="main-header__hamburger-button-container">
+            <label
+              class="hamburger-button"
+              for="main-nav-toggle"
+              title="Expandir barra de navegación"
+            >
+              <span class="hamburger-button__top-bread"></span>
+              <span class="hamburger-button__meat"></span>
+              <span class="hamburger-button__bottom-bread"></span>
+            </label>
+          </div>
+
+          <div class="main-header__main-nav-container">
+            <nav class="main-nav">
+              <ul class="main-nav__list">
+                <li class="main-nav__item">
+                  <a href="#/inicio" class="main-nav__link">Inicio</a>
+                </li>
+                <li class="main-nav__item">
+                  <a href="#/alta" class="main-nav__link">Alta</a>
+                </li>
+                <li class="main-nav__item">
+                  <a href="#/contacto" class="main-nav__link">Contacto</a>
+                </li>
+                <li class="main-nav__item">
+                  <a href="#/nosotros" class="main-nav__link">Nosotros</a>
+                </li>
+              </ul>
+            </nav>
+          </div>
+        </div>
+
+        <div class="cart-modal-container" id="items">
+          <div class="cart-modal__close-container">
+            <div class="cart-modal__close" title="Cerrar">X</div>
+          </div>
+          <div class="cart-modal__title-container">
+            <img class="cart-modal__title-img" src="../../img/icon-cart-modal.png" alt="">
+            <p class="cart-modal__title">Resumen de Compra</p>
+          </div>
+
+          <div class="cart-modal__render"></div>
+          <p>Total: <span id="total"></span></p>
+          <button id="btn-empty" class="cart-modal__btn-empty" title="Vaciar Carrito">Vaciar</button>
+          <button class="cart-modal__btn-end" title="Boton Finalizar Compra">Finalizar la compra</button>
+        </div>
+      </div>
+    </header>
+    
+    <main>{{{body}}}</main>
+
+    <footer>
+      <div class="main-footer">
+        <div class="main-footer__container">
+          <div class="main-footer__contact-container">
+            <h3>Contactanos!</h3>
+            <ul class="main-footer__contact-list">
+              <li class="contact-list__item">
+                <img
+                  class="contact-list__icon"
+                  src="img/icons-networks/icon-whatsapp.png"
+                  alt="WhatsApp"
+                />
+                <a
+                  href="https://wa.me/5491158774447"
+                  class="contact-list__link"
+                >5491158774447</a>
+              </li>
+              <li class="contact-list__item">
+                <img
+                  class="contact-list__icon"
+                  src="img/icons-networks/icon-phone.png"
+                  alt="Teléfono"
+                />
+                <a
+                  href="tel:(011) 4856-5623"
+                  class="contact-list__link"
+                >(011)4856-5623</a>
+              </li>
+              <li class="contact-list__item">
+                <img
+                  class="contact-list__icon"
+                  src="img/icons-networks/icon-mail.png"
+                  alt="Correo electrónico"
+                />
+                <a
+                  href="mailto:mendozabrendadalila@gmail.com"
+                  class="contact-list__link"
+                >mendozabrendadalila@gmail.com</a>
+              </li>
+              <li class="contact-list__item">
+                <img
+                  class="contact-list__icon"
+                  src="img/icons-networks/icon-location.png"
+                  alt="Direccion"
+                />
+                Av Montes de Oca 1301
+              </li>
+            </ul>
+          </div>
+          <div class="main-footer__networks">
+
+            <h3>Seguinos en nuestras redes</h3>
+            <ul class="network-list">
+              <li class="network-item">
+                <a
+                  href="https://instagram.com/"
+                  target="_blank"
+                  aria-label="instagram jugueteriacosmica"
+                >
+                  <img
+                    src="img/icons-networks/icon-instagram.png"
+                    alt="Instagram"
+                    class="icon-networks"
+                  />
+                </a>
+              </li>
+              <li class="network-item">
+                <a
+                  href="https://facebook.com/"
+                  target="_blank"
+                  aria-label="facebook jugueteriacosmica"
+                >
+                  <img
+                    src="img/icons-networks/icon-facebook.png"
+                    alt="Facebook"
+                    class="icon-networks"
+                  />
+                </a>
+              </li>
+            </ul>
+            <img
+              src="img/icons-networks/likes.png"
+              alt="likes"
+              class="icon-likes"
+            />
+          </div>
+          <div class="main-footer__payment">
+            <h3>Medios de pago</h3>
+            <ul class="payment-logos-container">
+              <li class="icon-payment"><img
+                  src="img/icons-payment/icon-visa.png"
+                  alt="tarjeta visa"
+                /></li>
+              <li class="icon-payment"><img
+                  src="img/icons-payment/icon-amex.png"
+                  alt="tarjeta american express"
+                /></li>
+              <li class="icon-payment"><img
+                  src="img/icons-payment/icon-mastercard.png"
+                  alt="tarjeta mastercard"
+                /></li>
+            </ul>
+          </div>
+          <div class="main-footer__up">
+            <a href="#" class="main-footer__up-link"><img class="main-footer__up-img" src="../../img/arriba.png" alt="Ir Arriba"></a>
+            <p>El astronauta te lleva al Inicio</p>
+          </div>
+
+        </div>
+        <div class="main-footer__copyright">
+          <p>Copyright &copy 2022 - Brenda Mendoza | Todos los derechos reservados</p>
+          <p>
+            Ilustraciones:
+            <a href="https://www.freepik.es/autor/catalyststuff" target="_blank">Designed by
+              catalyststuff / Freepik</a>
+          </p>
+        </div>
+
+      </div>
+    </footer>
+
+    <script src="js/vendor/handlebars.min-v4.7.7.js"></script>
+    <script src="js/main.js" type="module"></script>
+  </body>
+</html>

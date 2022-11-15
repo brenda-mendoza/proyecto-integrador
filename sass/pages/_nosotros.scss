@@ -1,0 +1,46 @@
+
+.main-presentation{
+    padding: 3em;
+    text-align: justify;
+    max-width: 1200px;
+    font-weight: 400;
+    color: #fff;
+    margin: 0 auto;
+    
+    &__container{
+        background-image: url(../../img/nosotros-img/stars-star.gif);
+    }
+
+    &__title{
+        text-align: center;
+        text-shadow: 2px 2px 5px #91a9d3;
+    }
+    &__sub-title{
+        font-style: italic;
+        font-weight: 700;
+        text-align: center;
+        text-shadow: 2px 2px 5px #91a9d3;
+    }
+    &__description{
+        background-color: rgba(0, 0, 0, 0.582);
+        font-weight: 700;
+        padding: 1em;
+        border: 5px double #EFFDFF;
+    }
+
+    &__icon{
+        margin: -3px;
+    }
+
+}
+
+
+.presentation-image{
+    width: 250px;
+    float: left;
+    margin: 0;
+
+    @media (min-width:768px) {
+        width: 350px;
+    }
+}

@@ -1,0 +1,124 @@
+
+//Modal 
+.cart-modal{
+    
+    &-container{
+    text-align: center;
+    background-color: #fff;
+    width: 97%;
+    height: 60%;
+    box-shadow: 5px 5px 7px hsla(0, 1%, 17%, 0.829);
+    position: absolute;
+    right: 1%;
+    top: 20%;
+    border-radius: 4px;
+    max-width: 700px;
+    display: none;
+    overflow: scroll;
+    scrollbar-color: rgba(0, 0, 0, .3) rgba(0, 0, 0, 0);
+    scrollbar-width: thin;
+    
+        &--show{
+            padding-left: 5px;
+            display: block;
+            z-index: 1;
+            text-align: center;
+            background-color: #EFFDFF;
+        }
+    }
+        
+    &__table{
+        width: 100%;
+        margin-right: auto;
+        margin-left: auto;
+        text-align: center;
+        border-bottom: 1px solid rgba(0, 0, 0, 0.212);
+        border-top: 1px solid rgba(0, 0, 0, 0.212);
+    }
+    
+    
+    &__item{
+        margin: 0.5em;
+        text-align: center;
+    }
+    &__quantity{
+        width: 50px;
+        text-align: center;
+    }
+
+    &__img{
+        width: 55px;
+        text-align: center;
+    }
+    &__btn-empty{
+        background-color: #C3DDDA;
+        border-radius: 3px;
+        border: #C3DDDA 2px solid;
+        padding: 4px;
+        margin-right: 10px;
+        cursor: pointer;
+    }
+
+    &__btn-end{
+        background-color: #10a110e7;
+        color: #fff;
+        border: #10a110 3px solid;
+        border-radius: 3px;
+        padding: 4px;
+        font-weight: bold;
+        cursor: pointer;
+        
+        &:hover,
+        &:focus{
+            background-color:#31eb31bb ;
+        }
+    }
+
+    &__title{
+        //text-align: left;
+        font-weight: bold;
+        font-size: 20px;
+
+        &-img{
+            width: 100px;
+            justify-self: end;
+        }
+
+        &-container{
+            display: grid;
+            grid-template-columns: 30% 70%;
+            align-items: center;
+        }
+    }
+
+    &__btn-delete{
+        margin-left: .5em;
+        color: white;
+        width: 25px;
+        height: 30px;
+        align-self: center;
+        border:1px solid rgb(202, 74, 74);
+        border-radius: 3px;
+        background-color: rgb(236, 81, 81);
+        padding: 4px 4px;
+        cursor: pointer;
+    }
+}
+
+
+// La X para cerrar el modal
+.cart-modal__close{
+    color: #fff;
+    border:1px solid rgb(202, 74, 74);
+    border-radius: 3px;
+    background-color: rgb(236, 81, 81);
+    padding: 5px 7px;
+    cursor: pointer;
+    
+    &-container{
+        display: flex;
+        justify-content: end;
+        padding: .5em;
+    }
+}
+

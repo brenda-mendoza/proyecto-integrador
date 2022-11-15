@@ -1,0 +1,11 @@
+
+.main-nav-toggle{
+    
+    display: none;
+}
+
+.main-nav-toggle:checked ~ .main-header .main-header__main-nav-container{
+    display: block;
+    transition: 5s all;
+
+}

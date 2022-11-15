@@ -1,0 +1,102 @@
+/*
+Azul:#354D77
+Celeste fondo: #EFFDFF
+Celeste: #8DC9EB
+Celeste pastel: #C3DDDA
+Amarillo:#F5C12D
+Bordo: #AE2C36
+*/
+.cards-container{
+    display: flex;
+    flex-wrap: wrap;
+    gap: .3em;
+    justify-content: center;
+    margin-left: auto;
+    margin-right: auto;
+    max-width: 1500px;
+
+}
+
+.section-cards{
+    text-align: center;
+    margin-left: auto;
+    margin-right: auto;
+
+    &__title{
+        font-size: 160%;
+    }
+
+    &__slogan{
+        font-size: 130%;
+    }
+
+    &__footer{
+        margin-top: 3em;
+        text-align: center;
+        background-color: #354D77;
+        padding: 1em;
+    }
+}
+
+
+.footer-newsletter{
+    border: none;
+    color: #fff;
+    
+    &__client-email{
+        border: none;
+        margin: 0;
+        outline: none;
+    }
+
+    &__title{
+
+        @media (min-width:768px) {
+            display: inline;
+        }
+        @media (min-width:1024px) {
+            font-size: 1.3em;
+        }
+    }
+
+    &__btn{
+        border: none;
+        background-color: transparent;
+        border-radius: 30px;
+        background: #ffb32d;
+        padding: .5em;
+    }
+
+    &__input-container{
+        margin-right: auto;
+        margin-left: auto;
+        margin-top: 1em;
+        background-color: #fff;
+        padding: 5px 5px 5px 15px;
+        width: 100%;
+        max-width: 318px;
+        border-radius: 30px;
+    }
+
+}
+
+
+.contact-whatsapp{
+
+    &__link{
+        position: fixed;
+        right: 7px;
+        top:90%;
+        width: auto;
+    }
+
+    &__image{
+        font-size: 0;
+        padding: 30px;
+        background-repeat: no-repeat;
+        background-size: 55px;
+        background-position: 50%;
+        background-image: url(../img/icon-phoneCall.png);
+    }
+}
+

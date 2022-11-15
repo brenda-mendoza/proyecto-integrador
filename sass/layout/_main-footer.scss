@@ -1,0 +1,134 @@
+/*
+Azul:#354D77
+Celeste fondo: #EFFDFF
+Celeste: #8DC9EB
+Celeste pastel: #C3DDDA
+Amarillo:#F5C12D
+*/
+
+//Footer del main
+.main-footer{
+    background-color:#EFFDFF;
+
+    &__container{
+        text-align: center;
+        padding: 1em;
+        color: #354D77;
+        font-weight: 700;
+        max-width: 1400px;
+        margin: 0 auto;
+    
+        @media (min-width:768px) {
+            display: grid;
+            grid-template-columns: 50% 50%;
+        }
+        
+    }
+
+    &__contact-container{
+        margin: 0 auto;
+        width: 300px;
+        text-align: center;
+    }
+
+    &__contact-list{
+        padding: 10px;
+    }
+
+    //Contenedor medios de pago
+    &__payment{
+        border-top: 1px solid gray;
+        @media (min-width:768px) {
+            grid-column-start: 1;
+            grid-column-end: 3;
+        }
+    }
+
+    &__up{
+        text-align: center;
+        @media (min-width:768px) {
+            grid-column-start: 1;
+            grid-column-end: 3;
+        }
+    
+        &-link{
+            display: block;
+        }
+        &-img{
+            width: 150px;
+            cursor: pointer;
+        }
+    }
+    
+
+    //Copyright
+
+    &__copyright{
+        padding: 0.5em;
+        background-color: #d6ebee;
+        color: #354d77b7;
+        font-style: italic;
+        font-size: 13px;
+    }
+}
+
+//Elementos de la lista de contacto
+.contact-list{
+    
+    &__item{
+        text-align: left;
+        font-size: 100%;
+        margin-top: .5em;
+        font-weight: 300;
+        list-style: none;
+    }
+    
+    //Iconos de Contacto
+    &__icon{
+        width: 20px;
+        vertical-align: middle;
+    }
+
+    //Links de contacto
+    &__link{
+        text-decoration: none;
+        color: #354D77;
+    }
+}
+
+
+//Lista redes sociales
+.network-list{
+    padding: 0;
+}
+
+//Items redes sociales
+.network-item{
+    display: inline-block;
+}
+
+//Iconos redes sociales
+.icon-networks{
+    width: 80%;
+}
+
+.icon-likes{
+    width: 110px;
+}
+
+
+// Lista Medios de pago
+.payment-logos-container{
+    padding: 0;
+    margin: .5em;
+    font-size: 100%;
+    position: relative;
+    font-weight: 300;
+    list-style: none;
+}
+
+//Iconos medios de pago
+.icon-payment{
+    display: inline-block;
+
+}

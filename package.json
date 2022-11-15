@@ -1,0 +1,26 @@
+{
+  "type": "module",
+  "name": "bc_56937-proyecto_integrador-etapa_2-brenda_mendoza",
+  "version": "1.0.0",
+  "description": "",
+  "main": "server.js",
+  "scripts": {
+    "nodemon-watch": "nodemon server.js -e *",
+    "sass-watch": "sass --no-source-map --watch sass/main.scss public/css/main.css",
+    "dev": "npm-run-all --parallel sass-watch nodemon-watch",
+    "start": "nodemon server.js"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "express": "^4.18.1",
+    "mongoose": "^6.7.2",
+    "multer": "^1.4.5-lts.1",
+    "sass": "^1.55.0"
+  },
+  "devDependencies": {
+    "nodemon": "^2.0.20",
+    "npm-run-all": "^4.1.5"
+  }
+}

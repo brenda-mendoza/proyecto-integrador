@@ -1,0 +1,199 @@
+/*
+Azul:#354D77
+Celeste fondo: #EFFDFF
+Celeste: #8DC9EB
+Celeste pastel: #C3DDDA
+Amarillo:#F5C12D
+*/
+
+.main-header{
+    background-color: #354D77;
+
+    &__container{
+        background-color: #354D77;
+        display: grid;
+        grid-template-columns: 15% 15% 60% 10%;
+        align-items: center;
+        justify-content: center;
+        max-width: 1240px;
+        margin: 0 auto;
+
+        @media (min-width:768px) {
+            grid-template-columns: 15% 45% 30% 10%;
+        }
+    }
+
+    &__deliver{
+        background-color: #C3DDDA;
+        padding: .5em;
+        color: #354D77;
+        font-size: 14px;
+    }
+
+    //Logo 
+    &__logo-container{
+        grid-column-start: 1;
+        grid-row-start: 1;
+    }
+    
+    //Formulario de busqueda
+    &__search-form-container{
+        display: block;
+        position: relative;
+        width: 100%;
+        margin-top: 5px;
+        text-align: center;
+        grid-column-start: 3;
+        grid-column-end: 4;
+        max-width: 400px;
+        
+        @media (min-width:768px) {
+            margin: 0;
+        }
+
+    }
+
+    //Boton Carrito
+    &__cart-button-container{
+        grid-column-start: 4;
+        grid-column-end: 5;
+    }
+
+    //Carrito Presionado
+    &__cart-button-container--press{
+        padding: .1em;
+        background-color: #294c88;
+        box-shadow: inset 1px 1px 4px #0b0d11;
+        border-radius: .2em;
+    }
+    
+    //Menu Hamburgesa
+    &__hamburger-button-container{
+        padding-left: 1em;
+        grid-column-start: 2;
+        grid-row-start: 1;
+        grid-column-end: 3;
+
+        //Menu hamburguesa oculto
+        @media(min-width: 768px){
+            display: none;
+        }
+    }
+
+    //Contenedor de barra de navegación oculta **estilos especificos en main-nav
+    &__main-nav-container{
+        align-items: center;
+        display: none;
+        grid-column-start: 1;
+        grid-column-end: 5;
+
+
+        //Barra de navegación visible
+        @media(min-width: 768px){
+            grid-column-start: 2;
+            grid-column-end: 3;
+            grid-row-start: 1;
+            font-size: 1.5em;
+            display: block; 
+        }
+    }
+
+}
+
+//Imagen de Logo
+.img-logo{
+    margin-left: .1em;
+    margin-top: .1em;
+    padding: .2em 0;
+    width: 90%;
+
+    @media (min-width:530px) {
+        width: 80%;
+    }
+
+    @media (min-width:768px) {
+        width: 70%;
+    }
+
+    @media (min-width:1024px) {
+        width: 50%;
+
+    }
+}
+
+//Imagen del Nombre Logo Encabezado
+.img-logo-name{
+    display: none;
+
+    @media (min-width:530px) {
+        width: 70%;
+    }
+}
+
+//Imagen Carrito
+.img-cart-button{
+    width: 75%;
+    padding: 0.1em;
+    cursor: pointer;
+    max-width: 50px;
+
+    &:hover{
+        transform: scale(1.1);
+    }
+    
+    @media(min-width: 668px){
+        width: 65%;
+    }
+    @media(min-width: 768px){
+        width: 60%;
+    }
+}
+
+//Input Buscador
+.search-input{
+    text-align: center;
+    background-color: #fff;
+    border: 0;
+    padding: .2em;
+    padding-right: 40px;
+    border-radius: .5em;
+    width: 80%;
+    
+    @media(min-width: 768px){
+        width: 90%;
+        font-size: 1em;
+    }
+    @media(min-width: 1024px){
+        width: 90%;
+        font-size: 1em;
+        padding: .3em;
+    }
+
+}
+
+
+//Imagen Lupa
+.search-icon{
+    width: 50%;
+    @media(min-width: 768px){
+        width: 55%;
+    }
+}
+
+//Boton contenedor de la lupa search
+.search-input-submit {
+    position: absolute;
+    right: 7%;
+    @media(min-width: 768px){
+        right: 2%;
+    }
+}
+//2da clase Boton contenedor de la lupa search
+.btn{
+    text-decoration: none;
+    text-align: center;
+    border: 0;
+    cursor: pointer;
+    background: none;
+}
+
